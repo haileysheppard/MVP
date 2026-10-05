@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: 'm' is not a keyword argument or valid child of the screen statement.
-    m "..."
-     ^
+File "game/script.rpy", line 80: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    scene placeholder1
+    ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Sun Oct  4 22:28:01 2026
+Mon Oct  5 08:46:33 2026

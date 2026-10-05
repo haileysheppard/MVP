@@ -1,12 +1,10 @@
-﻿define m = Character("Eufrid", image="Test")
-image MC happy = "Test2.png"
-image MC sad = "Test3.png"
+﻿define m = Character("Eufrid")
 
 define c = Character("Cordula")
 image Edel1 = "Edel.png"
 
 define e = Character("Emil")
-image rean1 = "rean.png" 
+image rean1 = "rean.png"
 
 define s = Character("Síofra")
 image placeholder1 = "images/placeholder1.png"
@@ -14,11 +12,6 @@ image placeholder2 = "images/placeholder2.jpg"
 image nothing = "images/nothing.jpg"
 
 screen Nothing():
-    "..."
-    "You need to get moving."
-    "..."
-    "There is no point in stnading around."
-    "..."
 
     imagemap:
         ground "images/Blank.jpg"
@@ -35,8 +28,11 @@ screen forest_path():
         # hover "images/FOREST_hover.jpg"   # optional: shows a highlight on hover
 
         # hotspot (x, y, width, height)
-        hotspot (242, 199, 120, 100) action Jump("placeholder1") tooltip "Mysterious noises are coming from this area."
-        hotspot (378, 172, 120, 100) action Jump("nothing") tooltip "Nothing of note."
+        hotspot (233, 345, 419, 191) action Jump("Bread") tooltip "Bread"
+        hotspot (660, 164, 406, 177) action Jump("Jars") tooltip "Jars"
+        hotspot (664, 628, 372, 108) action Jump("Pastries") tooltip "Pastries"
+        hotspot (0, 611, 394, 247) action Jump("FreshBread") tooltip "Fresh Bread"
+
 
     $ tooltip = GetTooltip()
 
@@ -54,16 +50,35 @@ label start:
 
 
 label dialogue:
-    show MC sad
+    m "..."
+    "You need to get moving"
+    m "..."
+    "There is no point in standing around."
+    m "..."
 
-    m "Huh?"
-    m "Where is this...?"
     play music "audio/VillageTest.mp3"
 
     call screen forest_path
 
+label FreshBread:
+m "Looks freshly made."
+m "I wonder if they made it"
+
+
+label Pastries:
+m "Wow, that smells divine." 
+m "I wonder if they could sneak me a piece..."
+
+label Jars:
+m "I see these jars everyday yet I still don't know what they are for."
+
+label Bread:
+m "Wow, it looks like they are prepping a lot."
+m "I guess it makes sense, the festival starts tomorrow..."
+m "Maybe I should've done more prep..."
 
 label placeholder1:
+
     scene placeholder1
     menu:
         "Who should I talk to?"
