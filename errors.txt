@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 19: 'm' is not a keyword argument or valid child of the screen statement.
+    m "..."
+     ^
+
+Ren'Py Version: Ren'Py 8.5.3.26051504
+Sun Oct  4 22:28:01 2026
