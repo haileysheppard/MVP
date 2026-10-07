@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 51: if statement expects a non-empty block.
-    if spot == "Bread":
-                       ^
-
-File "game/script.rpy", line 56: expected statement.
-    elif spot == "Jars":
-              ^
-
-File "game/script.rpy", line 59: expected statement.
-    elif spot =="Pastries":
-              ^
-
-File "game/script.rpy", line 63: expected statement.
-    elif spot == "FreshBread":
-              ^
+File "game/script.rpy", line 120: expected ':' not found.
+    label Emil_2
+                ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Mon Oct  5 15:03:08 2026
+Wed Oct  7 09:16:15 2026
